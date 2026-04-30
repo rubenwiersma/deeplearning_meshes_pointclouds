@@ -1,6 +1,8 @@
-### SGP 2025 Graduate School
-# Deep learning on meshes and point clouds
+### Eurographics 2026 Tutorial (2nd edition)
+# Deep Learning on Meshes and Point Clouds
 Ruben Wiersma
+
+This tutorial accompanies the course/tutorial given at Eurographics 2026 on "Deep Learning on Meshes and Point Clouds". The first edition of this course was given at the SGP 2025 Graduate School.
 
 ## Instructions
 [Skip to instructions for Visual Studio Code](#alternative-in-visual-studio-code)
