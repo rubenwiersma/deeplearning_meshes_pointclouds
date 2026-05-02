@@ -1,0 +1,3 @@
+[submodule "diffusion-net"]
+	path = diffusion-net
+	url = https://github.com/nmwsharp/diffusion-net.git

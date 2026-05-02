@@ -5,10 +5,10 @@ Ruben Wiersma
 This tutorial accompanies the course/tutorial given at Eurographics 2026 on "Deep Learning on Meshes and Point Clouds". The first edition of this course was given at the SGP 2025 Graduate School.
 
 ## Instructions
-[Skip to instructions for Visual Studio Code](#alternative-in-visual-studio-code)
-
-For this tutorial, you'll need to install Jupyter in your Python environment. We will install the rest of the required packages from the notebook, so you can also run the code on online services like Google Colab.
-
+First, clone the GitHub repository and include the submodules (required for Part 2):
+```
+git clone --recurse-submodule https://github.com/rubenwiersma/deeplearning_meshes_pointclouds.git
+```
 
 **Create a virtual environment**
 We'll create an environment to keep our code contained and manageable. You can use any environment manager you like, here the instructions use Python's own `venv` for minimal requirements.
@@ -39,12 +39,5 @@ jupyter notebook
 ### Starting the tutorial
 The `jupyter notebook` command starts the Jupyter server and opens the Jupyter interface in your browser. If you don't see it, check your terminal for instructions on where to go. It's often located at http://localhost:8889
 
-Then click on `sgp_dl_tutorial.ipynb` in the Jupyter file browser and follow the instructions in the notebook.
-
-### Alternative in Visual Studio Code
-You can also run the notebook within Visual Studio Code. First, create the conda environment with the right Python version and Jupyter:
-```bash
-conda create -n sgp_dl python=3.12 jupyter
-```
-
-Then, open `sgp_dl_tutorial.ipynb` in Visual Studio Code, select the `sgp_dl` environment in the top-right corner ("Select Kernel" $\rightarrow$ "Python Environments") and go through the notebook step-by-step. If you didn't use conda, but installed Jupyter in your default Python installation, you can select that environment (if you don't know where it's installed, run `which python` in your terminal).
+Then click on `tutorial_part_1.ipynb` in the Jupyter file browser and follow the instructions in the notebook.
+Part 2 (`tutorial_part_2.ipynb`) builds on part 1, so be sure to do this _after_ running part 1.
