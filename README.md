@@ -13,10 +13,12 @@ git clone --recurse-submodule https://github.com/rubenwiersma/deeplearning_meshe
 **Create a virtual environment**
 We'll create an environment to keep our code contained and manageable. You can use any environment manager you like, here the instructions use Python's own `venv` for minimal requirements.
 
+**Note** You'll need at least Python 3.11 for the requirements to install without complaints.
+
 Create the environment in code folder and activate:
 ```
 cd [root_folder]
-python -m venv ./dl_tutorial
+python -m venv ./dl_venv
 source ./dl_venv/bin/activate
 ```
 Whenever you start the tutorial, be sure that the environment is activated!
