@@ -9,29 +9,30 @@ This tutorial accompanies the course/tutorial given at Eurographics 2026 on "Dee
 
 For this tutorial, you'll need to install Jupyter in your Python environment. We will install the rest of the required packages from the notebook, so you can also run the code on online services like Google Colab.
 
-**Option 1 (separate environment with conda)**
 
-If you have conda installed ([instructions on how to install Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install)), you can run the following command in your terminal to create the right environment and install Jupyter:
-```bash
-conda create -n sgp_dl python=3.12 jupyter
-```
-To run the notebook:
-```bash
-cd [root_folder]
-conda activate sgp_dl
-jupyter notebook
-```
+**Create a virtual environment**
+We'll create an environment to keep our code contained and manageable. You can use any environment manager you like, here the instructions use Python's own `venv` for minimal requirements.
 
-**Option 2 (only pip)**
-
-If you don't like to use conda or use a different environment manager, you can also just use pip to install Jupyter and proceed with the tutorial.
-Install Jupyter:
-```bash
-pip install jupyter
-```
-To run the notebook:
+Create the environment in code folder and activate:
 ```
 cd [root_folder]
+python -m venv ./dl_tutorial
+source ./dl_venv/bin/activate
+```
+Whenever you start the tutorial, be sure that the environment is activated!
+
+We then need to install some dependencies. Most important are `torch` and `torch_geometric`. The instructions here assume that you have a CUDA-capable GPU, but you can also run the tutorial on a CPU. In that case, [follow the installation instructions here](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html).
+
+Run the following commands to install `torch`, `torch_geometric` and the rest of the requirements:
+```
+pip install torch --index-url https://download.pytorch.org/whl/cu126
+pip install torch_geometric
+pip install pyg_lib torch_cluster -f https://data.pyg.org/whl/torch-2.11.0+cu126.html
+pip install -r requirements.txt
+```
+
+Then run the notebook:
+```
 jupyter notebook
 ```
 
